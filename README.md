@@ -1,2 +1,2 @@
-# projectSteamPunk
+# projectJPMorgan
 Website for a videogame.
