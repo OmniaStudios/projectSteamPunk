@@ -48,6 +48,9 @@
   .card_main_devlog{
       width: 90%;
   }
+  .cursor{
+      display: none !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
