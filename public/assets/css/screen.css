@@ -1,40 +1,65 @@
 @media screen and (max-width: 1024px) {
-    .tiesto1{
-        display: none !important;
-    }
-    .tiesto2{
-        display: none !important;
-    }
-    .tiesto3{
-        display: none !important;
-    }
-    .tiesto4{
-        display: none !important;
-    }
-    .tiesto5{
-        display: none !important;
-    }
-    .tiesto6{
-        display: none !important;
-    }
-    .card_home{
-        width: auto !important;
-        /* background-color: blueviolet !important; */
-        text-align: center;
-    }
-    .h1_home{
-        font-size: 2em !important;
-        text-shadow: 
-                4px 4px #6620a0,
-                8px 8px #a3e111,
-                12px 12px rgb(66, 66, 66);
-                transition: all .5s ease-in;
-    }
+  .tiesto1 {
+    display: none !important;
+  }
+  .tiesto2 {
+    display: none !important;
+  }
+  .tiesto3 {
+    display: none !important;
+  }
+  .tiesto4 {
+    display: none !important;
+  }
+  .tiesto5 {
+    display: none !important;
+  }
+  .tiesto6 {
+    display: none !important;
+  }
+  .card_home {
+    width: auto !important;
+    /* background-color: blueviolet !important; */
+    text-align: center;
+  }
+  .h1_home {
+    font-size: 2em !important;
+    text-shadow: 4px 4px #6620a0, 8px 8px #a3e111, 12px 12px rgb(66, 66, 66);
+    transition: all 0.5s ease-in;
+  }
+  .card_about {
+    width: 18rem;
+  }
+  .container_about {
+    height: 100vh;
+  }
+  .lett {
+    display: none !important;
+  }
+  .card_about {
+    width: auto !important;
+  }
+  .contact {
+    display: none !important;
+  }
+  .title{
+      display: none !important;
+  }
+  .card_main_devlog{
+      width: 90%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
+  .card_about {
+    width: 50vh !important;
+  }
+  .container_about {
+    height: 50vh !important;
+  }
+  .title_mobile{
+      display: none !important;
+  }
 }
-@media screen and (max-width: 1024px) and (orientation:landscape) {
-    
+@media screen and (max-width: 1024px) and (orientation: landscape) {
 }

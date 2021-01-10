@@ -21,6 +21,4 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
 

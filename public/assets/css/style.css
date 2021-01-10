@@ -1,86 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    /* cursor: none; */
+html {
+  cursor: none;
+  scroll-behavior: smooth;
 }
 
-body{
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
-    background-color: #101357 !important;
+body {
+  overflow-x: hidden !important;
+  background-color: #101357 !important;
 }
 
-
-
-.navbar_floating{
-    z-index: 1 !important;
-    width: 215px;
-    height: 80px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border: 1px solid transparent !important;
-    border-radius: 30px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    color: black !important;
-    margin-bottom: 3em;
-    backdrop-filter: blur( 4px ) !important;  
-    position: fixed;
-    left: 50% !important; 
-    transform: translateX(-50%) translateY(0%) !important;
-}
-img{
-    filter: brightness(300%) !important;
+.navbar_floating {
+  z-index: 1 !important;
+  width: 215px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid transparent !important;
+  border-radius: 30px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  color: black !important;
+  margin-bottom: 3em;
+  backdrop-filter: blur(4px) !important;
+  position: fixed;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(0%) !important;
 }
 
-
-.btn_nav{
-    transition: all 1s ease;
+.btn_nav {
+  transition: all 1s ease;
 }
 
-.btn_nav:hover{
-    transform: rotate(360deg) scale(1.2);
+.btn_nav:hover {
+  transform: rotate(360deg) scale(1.2);
 }
-
-/* #cursor_custom{
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 4px ) !important;  
-
-    pointer-events: none;
-} */
 
 .cursor {
-    z-index: 1000 !important;
-    position: absolute;
-    pointer-events: none;
-    height: 20px;
-    width: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
+  z-index: 1000 !important;
+  position: absolute;
+  pointer-events: none;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
 }
 
-.card_home{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background-color: transparent !important;
-    border: 1px solid transparent !important;
-    padding: 20px;
-    color: white;
-    width: fit-content;
+.card_home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  padding: 20px;
+  color: white;
+  width: fit-content;
 }
 /* 
 .card_home_cover{
@@ -96,102 +78,304 @@ img{
     
 } */
 
-.h1_home{
-    font-family: 'Archivo Black' !important;
-    font-size: 10vh;
-    color: white;
-    text-shadow: 
-                8px 8px #6620a0,
-                16px 16px #a3e111,
-                24px 24px rgb(66, 66, 66);
-                transition: all .5s ease-in;
+.h1_home {
+  font-family: "Archivo Black" !important;
+  font-size: 10vh;
+  color: white;
+  text-shadow: 8px 8px #6620a0, 16px 16px #a3e111, 24px 24px rgb(66, 66, 66);
+  transition: all 0.5s ease-in;
 }
 
-.h1_home:hover{
-    text-shadow: 
-                0px 0px #6620a0,
-                0px 0px #a3e111,
-                0px 0px rgb(66, 66, 66);
+.h1_home:hover {
+  text-shadow: 0px 0px #6620a0, 0px 0px #a3e111, 0px 0px rgb(66, 66, 66);
 }
 
-.tiesto1{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
+.tiesto1 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tiesto2 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 38%;
+  left: 28%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tiesto3 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 62%;
+  left: 28%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tiesto4 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 62%;
+  right: 22%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tiesto5 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tiesto6 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 38%;
+  right: 22%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card_about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: white;
+}
+.a_l {
+  background-color: rgba(199, 33, 33, 0.637) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 12vh;
+  left: 26%;
+  width: 50px;
+  height: 50px;
+}
+.a_l > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.b_l {
+  background-color: rgba(185, 204, 14, 0.63) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 18vh;
+  left: 29%;
+  width: 50px;
+  height: 50px;
+}
+.b_l > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.o_l {
+  background-color: rgba(9, 255, 0, 0.589) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 24vh;
+  left: 28%;
+  width: 50px;
+  height: 50px;
+}
+.o_l > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.u_l {
+  background-color: rgba(8, 242, 250, 0.63) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 30vh;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+}
+.u_l > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.t_l {
+  background-color: rgba(170, 16, 190, 0.671) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 36vh;
+  left: 27%;
+  width: 50px;
+  height: 50px;
+}
+.t_l > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.github {
+    background-color: rgba(255, 255, 255, 0.295) !important;
     border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+    position: absolute;
+    top: 7vh;
+    right: 30%;
+    width: 80px;
+    height: 80px;
+  }
+  .github > a {
     position: absolute;
     top: 50%;
-    left: 26%;
-    transform: translateX(-50%) translateY(-50%); 
-}
-.tiesto2{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
-    position: absolute;
-    top: 38%;
-    left: 28%;
-    transform: translateX(-50%) translateY(-50%); 
-}
-.tiesto3{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
-    position: absolute;
-    top: 62%;
-    left: 28%;
-    transform: translateX(-50%) translateY(-50%); 
-}
-.tiesto4{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
-    position: absolute;
-    top: 62%;
-    right: 22%;
-    transform: translateX(-50%) translateY(-50%); 
-}
-.tiesto5{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translateX(-50%) translateY(-50%); 
-}
-.tiesto6{
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    background-color: rgba( 255, 255, 255, 0.10 ) !important;
-    border-radius: 5px !important;
-    box-shadow: 0 0px 10px 0 rgba( 31, 38, 135, 0.37 ) !important;
-    backdrop-filter: blur( 2px ) !important;  
-    position: absolute;
-    top: 38%;
-    right: 22%;
-    transform: translateX(-50%) translateY(-50%); 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration: none !important;
+    transition: all .5s ease;
+  }
+.github:hover{
+    transform: scale(1.2);
 }
 
+  .instagram {
+    background-color: rgba(255, 255, 255, 0.295) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+    position: absolute;
+    top: 20vh;
+    right: 28%;
+    width: 80px;
+    height: 80px;
+  }
+  .instagram > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration: none !important;
+    transition: all .5s ease;
+  }
+.instagram:hover{
+    transform: scale(1.2);
+}
+
+  .email {
+    background-color: rgba(255, 255, 255, 0.295) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+    position: absolute;
+    top: 33vh;
+    right: 30%;
+    width: 80px;
+    height: 80px;
+  }
+  .email > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration: none !important;
+    transition: all .5s ease;
+  }
+.email:hover{
+    transform: scale(1.2);
+}
+.container_devlog{
+    min-height: 100vh;
+}
+
+.card_devlog{
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: white;
+  line-height: 2px;
+  width: auto;
+}
+h4{
+    color: white !important;
+    font-family: 'Montserrat' !important;
+    font-weight: 700 !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card_main_devlog{
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+}
+.title_lett_devlog{
+    border-radius: 5px !important;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+    
+}
+.title_mobile{
+    background-color: rgba(0, 255, 64, 0.1) !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(2px) !important;
+}
 
 
