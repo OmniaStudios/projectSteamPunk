@@ -19,6 +19,63 @@ document.addEventListener('click', () => {
     setTimeout(() => {
         cursor.classList.remove("expand");
     }, 500)
-})
+}) 
 
 
+$(window).scroll(function () {
+  $('.navbar_floating').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('#btn_nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('.navbar_floating_mobile').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('#btn_nav_mobile').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('.arrow_down').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('.fa-arrow-down').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('.tooltip').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+AOS.init({
+});
+
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+// Homepage
+
+// .paragrafo di presentazione del progetto X
+// .paragrafo di rimando a "Chi siamo" X
+// .paragrafo di rimando al Devlog X
+// Chi siamo
+// .paragrafo generale
+// .schede personali con foto e link
+// Devlog
+// .gestione articoli
+
+// Aggiunte
+
+// .tooltips nel menu X
+// .versione mobile
+// .rimozione manina cursore X
+// .rimozione cursore su versione mobile X
+// .rimozione rotazione icone menù (nel caso sia una merda al massimo si rimette) X
+// .footer bozza
+// .versione inglese (?)
+// Articoli dicevo con testo, data e carosello di foto

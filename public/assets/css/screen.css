@@ -42,15 +42,36 @@
   .contact {
     display: none !important;
   }
-  .title{
-      display: none !important;
+  .title {
+    display: none !important;
   }
-  .card_main_devlog{
-      width: 90%;
+  .card_main_devlog {
+    width: 90%;
   }
-  .cursor{
-      display: none !important;
+  .cursor {
+    display: none !important;
   }
+  .team_desk {
+    display: none;
+  }
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0) translateY(0);
+    padding: 0 !important;
+  }
+  .navbar_floating_mobile{
+    display: block;
+  }
+  .navbar_floating{
+    display: none !important;
+  }
+  #arrow_down{
+    display: none;
+  }
+ 
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -60,9 +81,29 @@
   .container_about {
     height: 50vh !important;
   }
-  .title_mobile{
-      display: none !important;
+  .title_mobile {
+    display: none !important;
   }
+  .card-columns {
+    padding: 100px;
+  }
+  .team_mobile {
+    display: none;
+  }
+  #navbar_floating_mobile{
+    display: none;
+  }
+  .navbar_floating{
+    display: block;
+  }
+  #arrow_down_mobile{
+    display: none;
+  }
+  #btn_nav_mobile{
+    display: none;
+  }
+ 
+}
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 }
