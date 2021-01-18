@@ -70,7 +70,9 @@
   #arrow_down{
     display: none;
   }
- 
+ .btn_up{
+   display: none;
+ }
  
 }
 

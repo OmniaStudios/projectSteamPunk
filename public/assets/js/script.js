@@ -29,6 +29,18 @@ $(window).scroll(function () {
   $('#btn_nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 $(window).scroll(function () {
+  $('.btn_home').toggleClass('scrolledMore', $(this).scrollTop() > 500);
+});
+$(window).scroll(function () {
+  $('.btn_about').toggleClass('scrolledMore', $(this).scrollTop() > 500);
+});
+$(window).scroll(function () {
+  $('.btn_devlog').toggleClass('scrolledMore', $(this).scrollTop() > 500);
+});
+$(window).scroll(function () {
+  $('.vertical_line').toggleClass('scrolledMore', $(this).scrollTop() > 500);
+});
+$(window).scroll(function () {
   $('.navbar_floating_mobile').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 $(window).scroll(function () {
@@ -38,10 +50,16 @@ $(window).scroll(function () {
   $('.arrow_down').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 $(window).scroll(function () {
+  $('.arrow_down').toggleClass('scrolledMore', $(this).scrollTop() > 500);
+});
+$(window).scroll(function () {
   $('.fa-arrow-down').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 $(window).scroll(function () {
   $('.tooltip').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+$(window).scroll(function () {
+  $('.btn_up').toggleClass('scrolled', $(this).scrollTop() > 500);
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()

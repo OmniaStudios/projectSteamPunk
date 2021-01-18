@@ -112,6 +112,10 @@ a {
   width: 215px;
   border-radius: 30px !important;
 }
+#arrow_down.scrolledMore {
+  width: 270px;
+  border-radius: 30px !important;
+}
 #arrow_down_mobile.scrolled {
   border-radius: 30px !important;
 }
@@ -125,7 +129,52 @@ a {
 #btn_nav.scrolled {
   transform: translateY(0);
 }
-
+.btn_home.scrolledMore {
+  position: absolute;
+  left: -5px !important;
+}
+.btn_about.scrolledMore {
+  position: absolute;
+  left: 55px !important;
+}
+.btn_devlog.scrolledMore {
+  position: absolute;
+  left: 110px !important;
+}
+.btn_up {
+  opacity: 0;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 100% !important;
+  box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(2px) !important;
+  position: absolute;
+  top: 15px;
+  left: 185px;
+  padding: 10px;
+  font-size: 25px;
+  transform: translateX(50px);
+  
+}
+.btn_up.scrolled{
+  opacity: 1;
+  transform: translateX(0px);
+}
+.vertical_line{
+  position: absolute;
+  top: 15px;
+  left: 170px;
+  width: 1px;
+  height: 45px;
+  background-color: #777;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.vertical_line.scrolledMore{
+  opacity: 1;
+  transform: translateX(0px);
+}
 .btn_nav {
   cursor: none !important;
   transition: all 1s ease;
@@ -678,13 +727,9 @@ li {
   width: 55px;
   height: 50px;
 }
-.closebtn > .fa-times{
+.closebtn > .fa-times {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-
-
-
-
