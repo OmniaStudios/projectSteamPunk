@@ -12,5 +12,81 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- Custom Cursor -->
     <div id="cursor_custom" class="cursor"></div>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
+    <!-- NAVBAR START -->
+    <div class="card navbar_floating fixed-bottom" id="navbar_floating">
+        <div class="card-body">
+            <nav>
+                <ul>
+                    <a href="/index.html" id="btn_nav">
+                        <span data-toggle="tooltip" data-placement="top" title="Home" style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 15px;background-color: #00a5a5;
+                           padding: 10px; font-size: 20px; border-radius: 10px;"
+                            class="fas fa-home btn_nav btn_home red-tooltip"></span>
+                    </a>
+                    <a href="/about.html" id="btn_nav">
+                        <span data-toggle="tooltip" data-placement="top" title="Chi Siamo"
+                            style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 15px; left: 85px; background-color: #80fc03; padding: 10px; font-size: 20px; border-radius: 10px;"
+                            class="fas fa-user btn_nav btn_about"></span>
+                    </a>
+                    <a href="/devlog.html" id="btn_nav">
+                        <span data-toggle="tooltip" data-placement="top" title="DEVLOG"
+                            style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 15px; left: 145px; padding: 10px; font-size: 20px; border-radius: 10px; background-color: #fcba03;"
+                            class="fas fa-cookie btn_nav btn_cookie"></span>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div data-toggle="tooltip" data-placement="top" title="Scrolla in giu'" class="arrow_down fixed-bottom"
+        id="arrow_down" style="text-align: center;">
+        <a href="#info"><i class="fas fa-arrow-down"></i></a>
+    </div>
+    <!-- NAVBAR END -->
+
+
+    <!-- NAVBAR START -->
+    <div class="card navbar_floating_mobile fixed-bottom" id="navbar_floating_mobile">
+        <div class="card-body">
+            <nav>
+                <ul>
+                    <a onclick="openNav()" id="btn_nav_mobile">
+                        <span
+                            style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 15px; left: 85px; background-color: #0384fc; padding: 10px; font-size: 20px; border-radius: 10px;"
+                            class="fas fa-hamburger btn_nav btn_nav_mobile"></span>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="arrow_down fixed-bottom" id="arrow_down_mobile" style="text-align: center;">
+        <a href="#info"><i class="fas fa-arrow-down"></i></a>
+    </div>
+    <!-- NAVBAR END -->
+
+    <div id="myNav" class="overlay" style="z-index: 5 !important;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fas fa-times"></i></a>
+        <div class="overlay-content">
+            <a href="/index.html">
+                <span 
+                    style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 0px; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: #00a5a5; padding: 10px; font-size: 20px; border-radius: 10px;"
+                    class="fas fa-home btn_nav btn_nav_mobile"></span>
+                    <p style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%) translateY(-50%); font-family: 'Montserrat'; font-weight: 500; color: white; font-size: 10px;">HOME</p>
+            </a>
+            <a href="/about.html">
+                <span 
+                    style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 100px; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: #80fc03; padding: 10px; font-size: 20px; border-radius: 10px;"
+                    class="fas fa-user btn_nav btn_nav_mobile"></span>
+                    <p style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%) translateY(-50%); font-family: 'Montserrat'; font-weight: 500; color: white; font-size: 10px;">CHI SIAMO</p>
+            </a>
+            <a href="/devlog.html">
+                <span 
+                    style="border: 3px solid white; color: white; text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534); position: absolute; top: 200px; left: 50%; transform: translateX(-50%) translateY(-50%); background-color: #fcba03; padding: 10px; font-size: 20px; border-radius: 10px;"
+                    class="fas fa-cookie btn_nav btn_nav_mobile"></span>
+                    <p style="position: absolute; top: 240px; left: 50%; transform: translateX(-50%) translateY(-50%); font-family: 'Montserrat'; font-weight: 500; color: white; font-size: 10px;">DEVLOG</p>
+            </a>
+        </div>
+    </div>
