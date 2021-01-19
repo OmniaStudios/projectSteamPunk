@@ -3,7 +3,7 @@
 
 <body style="">
 
-    <div class="container-fluid container_home" id="home" data-color="blue">
+    <div class="container-fluid container_home" id="home">
         <div style="height: 100vh; position: absolute; top: 0; left: 0;" class="container-fluid" id="home">
             <div class="card card_home">
                 <div class="card-body">
@@ -21,7 +21,7 @@
         <div class="tiesto6 fas fa-hourglass-start" data-toggle="tooltip" data-placement="top" title="Home"></div>
     </div>
 
-    <div class="container-fluid" style="position: absolute; top: 100vh; left: 0; height: 100vh; padding: 50px;">
+    <div class="container-fluid" id="info_box" style="position: absolute; top: 100vh; left: 0; height: 100vh; padding: 50px;">
         <div class="card-columns" id="info" style="">
             <div class="card card_img_over"="fade-right" style="border-radius: 10px !important; color: white;">
                 <img style="filter: blur(1.5px); width: 100%; height: auto;" class="card-img-top"
@@ -51,10 +51,6 @@
                     <p class="card-text" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Delectus doloremque
                         aliquam ducimus autem non sit ad soluta cupiditate commodi laboriosam.</p>
-                    <a href="/about" class="btn btn_more" style="font-size: 12px;"><span class="border_link"
-                            style="border: 1px solid rgba(255, 255, 255, 0.212); border-radius: 5px; padding: 3px;"
-                            data-aos=" zoom-in">Vai
-                            a vedere</span> <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="card card_info card_center text-white text-center p-3"="zoom-out">
@@ -71,33 +67,42 @@
                     </footer>
                 </blockquote>
             </div>
-            <div class="card card_info_team text-center"=" zoom-in">
+            <div class="card card_info_team text-center"data-aos="zoom-in">
                 <div class="card-body">
                     <h5 class="card-title" data-aos="zoom-in">IL TEAM</h5>
                     <div class="team_desk">
                         <div class="row">
                             <div class="col">
-                                <div class="card card_info_team_img" style="height: 140px;" data-aos="zoom-in">
+                                <div class="card card_info_team_img" style="height: 200px;" data-aos="zoom-in">
                                     <img class="img_team" src="/assets/img/desica.jpg"
                                         style="width: 100px; height: 100px; object-fit: cover; margin-top: 10px; border-radius: 10px;"
                                         alt="">
                                     <p style="padding-top: 5px;">Christian De Sica</p>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-github"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-instagram"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-twitter"></a>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card_info_team_img" style="height: 140px;" data-aos="zoom-in">
+                                <div class="card card_info_team_img" style="height: 200px;" data-aos="zoom-in">
                                     <img class="img_team" src="/assets/img/cipollino.jpg"
                                         style="width: 100px; height: 100px; object-fit: cover; margin-top: 10px; border-radius: 10px;"
                                         alt="">
                                     <p style="padding-top: 5px;">Massimo Boldi</p>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-github"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-instagram"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-twitter"></a>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="card card_info_team_img" style="height: 140px;" data-aos="zoom-in">
+                                <div class="card card_info_team_img" style="height: 200px;" data-aos="zoom-in">
                                     <img class="img_team" src="/assets/img/aniston.jpg"
                                         style="width: 100px; height: 100px; object-fit: cover; margin-top: 10px; border-radius: 10px;"
                                         alt="">
                                     <p style="padding-top: 5px;">Jennifer Aniston</p>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-github"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-instagram"></a>
+                                    <a href="" style="font-size: 20px; padding: 5px;" class="fab fa-twitter"></a>
                                 </div>
                             </div>
                         </div>
@@ -105,24 +110,39 @@
                     <div class="team_mobile">
                         <div class="row">
                             <div class="col-12">
-                                <div class="card card_info" style="height: 35px;" data-aos="zoom-in">
+                                <div class="card card_info" style="height: 80px;" data-aos="zoom-in">
                                     <p
-                                        style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+                                        style="padding-top: 10px;">
                                         Christian De Sica</p>
+                                        <div class="content">
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-github"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-instagram"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-twitter"></a>
+                                       </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="card card_info" style="height: 35px;" data-aos="zoom-in">
+                                <div class="card card_info" style="height: 80px;" data-aos="zoom-in">
                                     <p
-                                        style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+                                        style="padding-top: 10px;">
                                         Massimo Boldi</p>
+                                       <div class="content">
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-github"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-instagram"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-twitter"></a>
+                                       </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="card card_info" style="height: 35px;" data-aos="zoom-in">
+                                <div class="card card_info" style="height: 80px;" data-aos="zoom-in">
                                     <p
-                                        style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+                                        style="padding-top: 10px;">
                                         Jennifer Aniston</p>
+                                        <div class="content">
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-github"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-instagram"></a>
+                                            <a href="" style="font-size: 20px; padding-left: 5px;" class="fab fa-twitter"></a>
+                                       </div>
                                 </div>
                             </div>
                         </div>
@@ -259,5 +279,5 @@
             </div>
         </footer> -->
     </div>
-
+</body>
     <%- include('./partials/footerFront');%>

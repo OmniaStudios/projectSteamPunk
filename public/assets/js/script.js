@@ -76,24 +76,26 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+
 // Homepage
 
 // .paragrafo di presentazione del progetto X
 // .paragrafo di rimando a "Chi siamo" X
 // .paragrafo di rimando al Devlog X
-// Chi siamo
-// .paragrafo generale
-// .schede personali con foto e link
+// Chi siamo X
+// .paragrafo generale X
+// .schede personali con foto e link X
 // Devlog
 // .gestione articoli
 
 // Aggiunte
 
 // .tooltips nel menu X
-// .versione mobile
+// .versione mobile X
 // .rimozione manina cursore X
 // .rimozione cursore su versione mobile X
 // .rimozione rotazione icone menù (nel caso sia una merda al massimo si rimette) X
 // .footer bozza
 // .versione inglese (?)
-// Articoli dicevo con testo, data e carosello di foto
+// Articoli dicevo con testo, data e carosello di foto X
+// Page Error

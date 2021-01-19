@@ -27,6 +27,10 @@
     text-shadow: 4px 4px #6620a0, 8px 8px #a3e111, 12px 12px rgb(66, 66, 66);
     transition: all 0.5s ease-in;
   }
+  .h1_about{
+    font-size: 2em !important;
+    text-shadow: 4px 4px #6620a0, 8px 8px #a3e111, 12px 12px rgb(66, 66, 66);
+  }
   .card_about {
     width: 18rem;
   }
@@ -73,7 +77,32 @@
  .btn_up{
    display: none;
  }
- 
+ .carousel-item > img{
+  border-radius: 10px 10px 0px 0px !important;
+ }
+ .col_p{
+   padding: 200px !important;
+ }
+ .p_dev{
+   padding: 0px 30px 30px 30px;
+ }
+ h5{
+   padding-left: 30px;
+ }
+ .footer_dev{
+   padding: 15px 0px 0px 30px;
+ }
+ .h1_dev{
+   font-size: 8vh;
+   text-shadow: 6px 6px #6620a0, 10px 10px #a3e111, 14px 14px rgb(66, 66, 66);
+ }
+ .p_dev_home{
+   width: 80%; 
+   font-size: 10px;
+ }
+ .hor_line{
+   width: 50%;
+ }
 }
 
 @media screen and (min-width: 1024px) {
@@ -104,7 +133,9 @@
   #btn_nav_mobile{
     display: none;
   }
- 
+  .p_dev{
+    padding-right: 30px;
+  }
 }
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
