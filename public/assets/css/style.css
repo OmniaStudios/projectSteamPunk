@@ -17,6 +17,15 @@ body {
   overflow-x: hidden !important;
   background-color: #101357 !important;
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgb(119, 0, 255);
+}
+
+::selection {
+  color: white;
+  background: rgb(119, 0, 255);
+}
 
 .navbar_floating {
   z-index: 2 !important;
@@ -567,10 +576,6 @@ h4 {
 .card_img_over > img {
   border-radius: 10px !important;
 }
-.card_img_over:hover {
-  color: white !important;
-  transform: scale(1.009);
-}
 .card_center {
   /* background-color: rgba(141, 255, 112, 0.548) !important;
   border-radius: 5px !important;
@@ -580,10 +585,6 @@ h4 {
   font-family: "Montserrat";
   font-size: small;
   color: #777 !important;
-}
-.card_info:hover {
-  transform: scale(1.009);
-  backdrop-filter: blur(0px) !important;
 }
 
 ol > li {
@@ -623,12 +624,12 @@ ol > li.active {
   padding: 0 !important;
 }
 
-.btn_more > .fa-arrow-right {
+.btn_more > .fa-angle-right {
   visibility: hidden;
   transition: all 0.3s ease;
   transform: translateX(-10px);
 }
-.btn_more:hover > .fa-arrow-right {
+.btn_more:hover > .fa-angle-right {
   transform: translateX(0px);
   visibility: visible;
 }
@@ -789,4 +790,43 @@ b{
 }
 .p_dev{
   font-size: 0.8em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  border-radius: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(4px);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.349); 
+}
+
+
+.btn_website {
+  color: white !important;
+  padding: 0 !important;
+}
+
+.btn_website > .fa-angle-right {
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: translateX(-10px);
+}
+.btn_website:hover > .fa-angle-right {
+  transform: translateX(5px);
+  visibility: visible;
 }
