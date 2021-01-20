@@ -1,0 +1,70 @@
+<%-include('./partials/headerBack');%>
+    <title>Document</title>
+    </head>
+
+    <body style="background-color: #262626;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+            style="font-family: 'Montserrat'; font-weight: 700; z-index: 10 !important;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a style="color: white !important;" class="nav-link" href="/indexDB.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a style="color: white !important;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            DEVLOG
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: #777 !important; border: 1px solid #777;">
+                            <a class="dropdown-item" href="/crea.html"><i class="fas fa-plus"></i> Crea</a>
+                            <a class="dropdown-item" href="/modifica.html"><i class="fas fa-pen"></i> Modifica</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="min-height: 100vh; position: absolute; top: 100px; left: 0;">
+            <div class="row">
+                <div class="col" style="padding-bottom: 30px;">
+                    <div class="card card_modifica" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <b style="font-family: 'Montserrat'; color: white; font-weight: 700; font-size: 20px;">Modifica
+                                    Prodotto</b>
+                            </div>
+                            <form method="POST">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="Title" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Titolo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <textarea maxlength="250" class="form-control" id="exampleFormControlTextarea1"
+                                            rows="3" name="Desc" placeholder="Descrizione"></textarea>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="contenti" style="display: inline-block;">
+                            <a href="" class="btn-success"
+                                style="display: block; width: 70px; text-align: center; border-radius: 5px; font-weight: 700; padding-top: 5px; padding-bottom: 5px; margin-left: 20px; margin-bottom: 20px;">Salva</a>
+                            <a href="" class="btn-danger"
+                                style="display: block; width: 70px; text-align: center; border-radius: 5px; font-weight: 700; padding-top: 5px; padding-bottom: 5px; margin-left: 20px; margin-bottom: 20px;">Elimina</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <%-include('./partials/footerBack');%>

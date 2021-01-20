@@ -1,0 +1,120 @@
+<%-include('./partials/headerBack');%>
+    <title>Document</title>
+    </head>
+
+    <body style="background-color: #262626;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+            style="font-family: 'Montserrat'; font-weight: 700; z-index: 10 !important;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a style="color: white !important;" class="nav-link" href="/indexDB.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a style="color: white !important;" class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            DEVLOG
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="background-color: #777 !important; border: 1px solid #777;">
+                            <a class="dropdown-item" href="/crea.html"><i class="fas fa-plus"></i> Crea</a>
+                            <a class="dropdown-item" href="/modifica.html"><i class="fas fa-pen"></i> Modifica</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="min-height: 100vh; position: absolute; top: 0; left: 0;">
+            <div class="card card_crea"
+                style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452); border-radius: 10px;">
+                <div class="card-body">
+                    <div class="card-title" style="font-size: 30px;">
+                        <b style="font-family: 'Montserrat'; font-weight: 700; color: white;">&nbsp;DEVLOG <span
+                                style="font-weight: 100; color: #777;">|</span> <span
+                                style="font-weight: 200;">CREA</span></b>
+                    </div>
+                    <div class="card-text">
+                    </div>
+                    <form action="/admin/crea/wineProduct" method="POST" enctype="multipart/form-data" id="uploadForm">
+                        <div class="container-fluid" style="margin-bottom: 20px;">
+                            <div class="row">
+                                <div class="col" id="col0">
+                                    <div class="card card_list"
+                                        style="margin-bottom: 10px; padding-top: 1px; padding-left: 10px; padding-right: 10px; height: 30px;">
+                                        <p id="p0" style="display: inline;"><span onclick="deleteEle(0)"
+                                                class="fas fa-trash-alt"></span>&nbsp;&nbsp;&nbsp;1&nbsp;~&nbsp;<input
+                                                id="input0"
+                                                style="background-color: transparent !important; border: 1px solid transparent;"
+                                                type="text" value="" disabled></input></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="col1">
+                                    <div class="card card_list"
+                                        style="margin-bottom: 10px; padding-top: 1px; padding-left: 10px; padding-right: 10px; height: 30px;">
+                                        <p id="p1" style="display: inline;"><span onclick="deleteEle(1)"
+                                                class="fas fa-trash-alt"></span>&nbsp;&nbsp;&nbsp;2&nbsp;~&nbsp;<input
+                                                id="input1"
+                                                style="background-color: transparent !important; border: 1px solid transparent;"
+                                                type="text" value="" disabled></input></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="col2">
+                                    <div class="card card_list"
+                                        style="margin-bottom: 10px; padding-top: 1px; padding-left: 10px; padding-right: 10px; height: 30px;">
+                                        <p id="p2" style="display: inline;"><span onclick="deleteEle(2)"
+                                                class="fas fa-trash-alt"></span>&nbsp;&nbsp;&nbsp;3&nbsp;~&nbsp;<input
+                                                id="input2"
+                                                style="background-color: transparent !important; border: 1px solid transparent;"
+                                                type="text" value="" disabled></input></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="status"></span>
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <input name='userPhoto' type="file" class="custom-file-input" id="customFile"
+                                        multiple>
+                                    <label class="custom-file-label" for="customFile" id="status">Selezionare le
+                                        Immagini
+                                        (MAX. 3)</label>
+                                </div>
+                                <div>
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <input maxlength="30" type="text" class="form-control" name="Title"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Titolo" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <textarea maxlength="20" class="form-control"
+                                                id="exampleFormControlTextarea1" rows="3" name="Desc"
+                                                placeholder="Breve Descrizione" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input
+                                style="color: white; background-color: rgb(55, 189, 55) !important; font-weight: 700; border-radius: 100px; border: 1px solid transparent; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452);"
+                                class="btn" type="submit" href="#" role="button">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%-include('./partials/footerBack');%>

@@ -1,0 +1,45 @@
+<%-include('./partials/headerBack');%>
+  <title>Document</title>
+  </head>
+
+  <body
+    style="background-image: url(/login.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+
+    <div class="container-fluid" style="min-height: 100vh; position: absolute; top: 0; left: 0;">
+      <div class="card card_login"
+        style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452); border-radius: 10px;">
+        <div class="card-body">
+          <div class="card-title" style="font-size: 30px;">
+            <b style="font-family: 'Montserrat'; font-weight: 700; color: #777; padding-left: 20px;">LOGIN</b>
+          </div>
+          <div class="card-text">
+          </div>
+          <form action="/admin/crea/wineProduct" method="POST" enctype="multipart/form-data" id="uploadForm">
+            <div class="container-fluid" style="margin-bottom: 20px;">
+              <div class="form-group">
+                <div>
+                  <br>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input maxlength="30" type="text" class="form-control" name="" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Username" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <input maxlength="30" type="text" class="form-control" name="" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Password" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                style="color: white; background-color: rgb(55, 189, 55) !important; font-weight: 700; border-radius: 100px; border: 1px solid transparent; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.452);"
+                class="btn" type="submit" href="#" role="button">
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <%-include('./partials/footerBack');%>
